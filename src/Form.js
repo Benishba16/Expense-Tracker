@@ -1,20 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Form extends React.Component {
+class Form extends Component {
     render() {
       return (
         <div id="Form">
           <h3>Add a new item to the table:</h3>  
           <form onSubmit={this.props.handleFormSubmit}>
-            <label htmlFor="catagory">
+            <label>
             Catagory:
             <input  id="catagory" 
                     value={this.props.Catagory} 
-                    type="text" name="catagory" 
+                    type="catagory" name="catagory" 
                     onChange={this.props.handleInputChange} />
             </label>
             <br/>
-            <label for="amount">
+            <label>
             Amount Spend:
             <input  id="amount" 
                     value={this.props.Amount} 
@@ -22,7 +22,7 @@ class Form extends React.Component {
                     onChange={this.props.handleInputChange} />
             </label>
             <br/>
-            <label for="date">
+            <label >
               Date of Transaction:
               <input  id="date" 
                       value={this.props.Date} 

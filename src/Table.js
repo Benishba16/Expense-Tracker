@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 
 
-class Table extends React.Component {
+class Table extends Component {
     render() {
       const items = this.props.items;
       return (
@@ -17,7 +17,7 @@ class Table extends React.Component {
               </tr>
               {items.map(item => {
                 return (
-                  <tr>
+                  <tr key={item}>
                     <td>{item.catagory}</td>
                     <td>{item.amount}</td>
                     <td>{item.date}</td>
