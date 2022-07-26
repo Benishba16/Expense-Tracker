@@ -4,6 +4,7 @@ import React, { Component } from "react";
 class Table extends Component {
     render() {
       const items = this.props.items;
+      console.log(this.props)
       return (
         <div id="Table">
           <table>
