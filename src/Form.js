@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class Form extends Component {
     render() {
+      console.log("first")
       return (
         <div id="Form">
           <h3>Add a new item to the table:</h3>  
